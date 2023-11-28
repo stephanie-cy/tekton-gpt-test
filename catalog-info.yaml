@@ -1,13 +1,7 @@
 # catalog config
-backend:
-  auth:
-    keys:
-      - secret: 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 # notsecret
 catalog:
   locations:
     - type: url
-      target: https://github.com/janus-idp/software-templates/blob/main/templates/github/tekton/template.yaml
+      target: https://github.com/stephanie-cy/software-templates/blob/main/templates/github/tekton/template.yaml
       rules:
         - allow: [Template]
-    - type: file
-      target: template.yaml # Backstage will expect the file to be in packages/backend/template.yaml
